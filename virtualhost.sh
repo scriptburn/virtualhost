@@ -61,7 +61,7 @@ if [ "$action" == 'create' ]
 			 
 			if [  -f "$PWD/index.html" ]; then
 
-				cp "$PWD/index1.html" "$rootDir/index.html" 
+				cp "$PWD/index.html" "$rootDir/index.html" 
 				if [ ! $! ]; then
 					echo $"ERROR: Not able to write in file $rootDir/index.html. Please check permissions"
 				    exit;
